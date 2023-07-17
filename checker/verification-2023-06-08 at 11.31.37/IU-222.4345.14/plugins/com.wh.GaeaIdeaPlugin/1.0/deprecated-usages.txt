@@ -1,0 +1,1 @@
+Deprecated constructor com.intellij.openapi.vfs.CompactVirtualFileSet.<init>() is invoked in com.wh.tools.VfsUtilCore.createCompactVirtualFileSet() : VirtualFileSet

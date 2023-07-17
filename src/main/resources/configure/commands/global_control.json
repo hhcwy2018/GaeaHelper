@@ -1,0 +1,663 @@
+{
+    "method": [{
+            "name": "getVal",
+            "title": "获取控件的值",
+            "replace": "getVal()",
+            "proc": "Object getVal()",
+            "result": "返回该控件的值"
+        }, {
+            "name": "getVal",
+            "title": "设置控件的值",
+            "replace": "getVal(value)",
+            "proc": "void getVal(Object value)",
+            "param": [{
+                    "name": "value",
+                    "title": "控件的值"
+                }
+            ]
+        }, {
+            "name": "clearContent",
+            "title": "清空控件内容",
+            "replace": "clearContent()",
+            "proc": "void clearContent()"
+        }, {
+            "name": "getGridData",
+            "title": "获取表格控件值(仅仅表格控件可使用)",
+            "replace": "getGridData()",
+            "proc": "Object getGridData()",
+            "result": "返回该表格数据"
+        }, {
+            "name": "setGridData",
+            "title": "设置表格控件值(仅仅表格控件可使用)",
+            "replace": "setGridData(DATA, COLUMN)",
+            "proc": "void setGridData(Object DATA,Object COLUMN)",
+            "param": [{
+                    "name": "DATA",
+                    "title": "表格数据"
+                }, {
+                    "name": "COLUMN",
+                    "title": "表格表头数据"
+                }
+            ]
+        }, {
+            "name": "setComboBoxData",
+            "title": "设置下拉列表控件值(仅仅下拉列表控件可使用)",
+            "replace": "setComboBoxData(DATA)",
+            "proc": "void setComboBoxData(Object DATA)",
+            "param": [{
+                    "name": "DATA",
+                    "title": "表格数据"
+                }
+            ]
+        }, {
+            "name": "setSelected",
+            "title": "设置表格选中行(仅仅下拉列表控件可使用)",
+            "replace": "setSelected(index)",
+            "proc": "void setSelected(Number index)",
+            "param": [{
+                    "name": "index",
+                    "title": "表格行号"
+                }
+            ]
+        }, {
+            "name": "getSelected",
+            "title": "设置表格选中行(仅仅表格控件可使用)",
+            "replace": "getSelected(index)",
+            "proc": "Object getSelected(Number index)",
+            "result": "返回该表格选中行的数据"
+        }, {
+            "name": "getMultiSelected",
+            "title": "设置表格选中行(仅仅表格控件可使用)",
+            "replace": "getMultiSelected()",
+            "proc": "Object getMultiSelected()",
+            "result": "返回该表格选中的所有行数据"
+        }, {
+            "name": "selectAll",
+            "title": "设置表格所有行选中(仅仅表格控件可使用)",
+            "replace": "selectAll()",
+            "proc": "void selectAll()"
+        }, {
+            "name": "addRow",
+            "title": "表格新增一行数据(仅仅表格控件可使用)",
+            "replace": "addRow(DATA)",
+            "proc": "void addRow(Object DATA)",
+            "param": [{
+                    "name": "DATA",
+                    "title": "行数据"
+                }
+            ]
+        }, {
+            "name": "remove",
+            "title": "删除表格指定行数据(仅仅表格控件可使用)",
+            "replace": "remove(index)",
+            "proc": "void remove(Number index)",
+            "param": [{
+                    "name": "index",
+                    "title": "行索引"
+                }
+            ]
+        }, {
+            "name": "editRow",
+            "title": "删除表格指定行数据(仅仅表格控件可使用)",
+            "replace": "editRow(index, key, value)",
+            "proc": "void editRow(Number index,Sting key,String value)",
+            "param": [{
+                    "name": "index",
+                    "title": "行索引"
+                }, {
+                    "name": "key",
+                    "title": "要修改表头的filed"
+                }, {
+                    "name": "value",
+                    "title": "修改后的值"
+                }
+            ]
+        }, {
+            "name": "setRowColor",
+            "title": "设置表格行颜色(仅仅表格控件可使用)",
+            "replace": "setRowColor(index, r, g, b)",
+            "proc": "void setRowColor(Number index, Number r, Number g, Number b)",
+            "param": [{
+                    "name": "index",
+                    "title": "行索引"
+                }, {
+                    "name": "r",
+                    "title": "颜色域r"
+                }, {
+                    "name": "g",
+                    "title": "颜色域g"
+                }, {
+                    "name": "b",
+                    "title": "颜色域b"
+                }
+            ]
+        }, {
+            "name": "setFocus",
+            "title": "设置该控件获得焦点",
+            "replace": "setFocus()",
+            "proc": "void setFocus()"
+        }, {
+            "name": "clearFocus",
+            "title": "去除该控件焦点",
+            "replace": "clearFocus()",
+            "proc": "void clearFocus()"
+        }, {
+            "name": "updata",
+            "title": "刷新该控件数据源",
+            "replace": "updata()",
+            "proc": "void updata()"
+        }, {
+            "name": "hasFocus",
+            "title": "转换数据到字符串",
+            "replace": "hasFocus(uiid)",
+            "proc": "Boolean hasFocus(String uiid)",
+            "param": [{
+                    "name": "uiid",
+                    "title": "页面编号"
+                }
+            ],
+            "result": "输入页面名称，如果页面中某个控件有焦点则结果为true"
+        }, {
+            "name": "mainUIThreadCall",
+            "title": "在主线程UI中执行相依回调方法",
+            "replace": "mainUIThreadCall(fn)",
+            "proc": "void mainUIThreadCall(Function fn)",
+            "param": [{
+                    "name": "fn",
+                    "title": "回调函数"
+                }
+            ]
+        }, {
+            "name": "ThreadCall",
+            "title": "开启新线程执行相应回调方法",
+            "replace": "ThreadCall(fn)",
+            "proc": "void ThreadCall(Function fn)",
+            "param": [{
+                    "name": "fn",
+                    "title": "回调函数"
+                }
+            ]
+        }, {
+            "name": "request",
+            "title": "发送http请求",
+            "replace": "request(url, postData, function(){data}, function(ret,data){})",
+            "proc": "void request(String url, Object postData, Function callback, Function failcallback,Boolean async)",
+            "param": [{
+                    "name": "url",
+                    "title": "请求地址"
+                }, {
+                    "name": "postData",
+                    "title": "请求入参"
+                }, {
+                    "name": "callback",
+                    "title": "请求成功时回调"
+                }, {
+                    "name": "failcallback",
+                    "title": "请求失败时回调"
+                }, {
+                    "name": "async",
+                    "title": "是否为异步请求"
+                }
+            ]
+        }, {
+            "name": "setButtonCellStatusColor",
+            "title": "设置表格内具体按钮状态颜色与文字",
+            "replace": "setButtonCellStatusColor(tableID, row, column, num, text, color)",
+            "proc": "void setButtonCellStatusColor(String tableID,Number row,Number column,Number num, [String text],[String color])",
+            "param": [{
+                    "name": "tableID",
+                    "title": "表格id"
+                }, {
+                    "name": "row",
+                    "title": "行数"
+                }, {
+                    "name": "column",
+                    "title": "列数"
+                }, {
+                    "name": "num",
+                    "title": "该列中按钮的位数"
+                }, {
+                    "name": "text",
+                    "title": "文字"
+                }, {
+                    "name": "color",
+                    "title": "颜色"
+                }
+            ]
+        }, {
+            "name": "setRunFlowData",
+            "title": "设置指定控件",
+            "replace": "setRunFlowData(createUIname, data)",
+            "proc": "void setRunFlowData(String createUIname, Object data)",
+            "param": [{
+                    "name": "createUIname",
+                    "title": "设置审批流程信息的控件名称"
+                }, {
+                    "name": "data",
+                    "title": "审批数据"
+                }
+            ]
+        }, {
+            "name": "switch",
+            "title": "切换子页面",
+            "replace": "switch(selecter, uiid)",
+            "proc": "void switch(String selecter, String uiid)",
+            "param": [{
+                    "name": "selecter",
+                    "title": "子页面控件名称"
+                }, {
+                    "name": "uiid",
+                    "title": "新页面页面编号"
+                }
+            ]
+        }, {
+            "name": "warn",
+            "title": "弹出系统警告框,多入参则依次弹出消息。",
+            "replace": "warn(msg)",
+            "proc": "void warn(String msg1, [String msg2],...)",
+            "param": [{
+                    "name": "msg1",
+                    "title": "消息1"
+                }, {
+                    "name": "msg2",
+                    "title": "消息2"
+                }
+            ]
+        }, {
+            "name": "getVersionName",
+            "title": "转换数据到字符串",
+            "replace": "getVersionName()",
+            "proc": "String getVersionName()",
+            "result": "返回当前系统的版本号"
+        }, {
+            "name": "mq",
+            "title": "建立MQ监听信息",
+            "replace": "mq(name,controlname,queue,exchange,key,type,callbackname)",
+            "proc": "void mq(String name,String controlname,String queue, String exchange,String key,String type,String callbackname)",
+            "param": [{
+                    "name": "name",
+                    "title": "MQ控件名称"
+                }, {
+                    "name": "controlname",
+                    "title": "接收控件名称"
+                }, {
+                    "name": "queue",
+                    "title": "队列名称"
+                }, {
+                    "name": "exchange",
+                    "title": "交换机名称"
+                }, {
+                    "name": "key",
+                    "title": "交换机密钥"
+                }, {
+                    "name": "type",
+                    "title": "交换机类型"
+                }, {
+                    "name": "callbackname",
+                    "title": "消息监听后回调函数名称"
+                }
+            ]
+        }, {
+            "name": "mqSend",
+            "title": "发送MQ消息。",
+            "replace": "mqSend(name,queue,exchange,key,content)",
+            "proc": "void mqSend(String name,String queue, String exchange,String key,String content)",
+            "param": [{
+                    "name": "name",
+                    "title": "MQ控件名称"
+                }, {
+                    "name": "queue",
+                    "title": "队列名称"
+                }, {
+                    "name": "exchange",
+                    "title": "交换机名称"
+                }, {
+                    "name": "key",
+                    "title": "交换机密钥"
+                }, {
+                    "name": "content",
+                    "title": "发送信息内容"
+                }
+            ]
+        }, {
+            "name": "showNotification",
+            "title": "弹出系统消息框",
+            "replace": "showNotification(msg,function(){})",
+            "proc": "void showNotification(String msg,Function callback)",
+            "param": [{
+                    "name": "msg",
+                    "title": "消息内容"
+                }, {
+                    "name": "callback",
+                    "title": "点击消息框后的回调函数"
+                }
+            ]
+        }, {
+            "name": "print",
+            "title": "在控制台打印信息",
+            "replace": "print(msg)",
+            "proc": "void print(String msg1, [String msg2],...)",
+            "param": [{
+                    "name": "msg1",
+                    "title": "消息1"
+                }, {
+                    "name": "msg2",
+                    "title": "消息2"
+                }
+            ]
+        }, {
+            "name": "readFile",
+            "title": "读取指定地址文件内容",
+            "replace": "readFile(path)",
+            "proc": "void readFile(String path)",
+            "param": [{
+                    "name": "path",
+                    "title": "文件所在地址"
+                }
+            ]
+        }, {
+            "name": "writeFile",
+            "title": "加文本写入指定文件中",
+            "replace": "writeFile(path,content)",
+            "proc": "void writeFile(String path,String content)",
+            "param": [{
+                    "name": "path",
+                    "title": "文件所在地址"
+                }, {
+                    "name": "content",
+                    "title": "写入文件内容"
+                }
+            ]
+        }, {
+            "name": "system",
+            "title": "加文本写入指定文件中",
+            "replace": "system(path,content)",
+            "proc": "String system(String path,String content)",
+            "result": "返回当前系统类型，如：'osWindow'"
+        }, {
+            "name": "sleep",
+            "title": "延迟执行方法",
+            "replace": "sleep(time, callback, params, async)",
+            "proc": "void sleep(Number time, String callback,Sting params,Boolean async)",
+            "param": [{
+                    "name": "time",
+                    "title": "延迟时间（ms）"
+                }, {
+                    "name": "callback",
+                    "title": "延迟执行的方法名"
+                }, {
+                    "name": "params",
+                    "title": "延迟回调后入参"
+                }, {
+                    "name": "async",
+                    "title": "是否为异步执行"
+                }
+            ]
+        }, {
+            "name": "jump",
+            "title": "跳转页面",
+            "replace": "jump(page, params)",
+            "proc": "void jump(String page, [Object params])",
+            "param": [{
+                    "name": "page",
+                    "title": "跳转页面名称"
+                }, {
+                    "name": "params",
+                    "title": "跳转页面时参数"
+                }
+            ]
+        }, {
+            "name": "getJumpParam",
+            "title": "获取之前跳转页面传入的入参",
+            "replace": "getJumpParam(page, key)",
+            "proc": "String getJumpParam(String page, String key)",
+            "param": [{
+                    "name": "page",
+                    "title": "跳转页面名称"
+                }, {
+                    "name": "key",
+                    "title": "跳转页面时参数名"
+                }
+            ],
+            "result": "返回跳转指定页面时入参时传入数据。"
+        }, {
+            "name": "getDate",
+            "title": "格式化时间",
+            "replace": "getDate(time, format)",
+            "proc": "String getDate(String time, String format)",
+            "param": [{
+                    "name": "time",
+                    "title": "时间字符串"
+                }, {
+                    "name": "format",
+                    "title": "格式化类型"
+                }
+            ],
+            "result": "返回指定格式的时间。"
+        }, {
+            "name": "stop",
+            "title": "停止执行之后的脚本内容",
+            "replace": "stop()",
+            "proc": "void stop()"
+        }, {
+            "name": "download",
+            "title": "下载指定文件",
+            "replace": "download(url, fliename, uploadpath)",
+            "proc": "void download(String url,String fliename,String uploadpath)",
+            "param": [{
+                    "name": "url",
+                    "title": "文件地址"
+                }, {
+                    "name": "fliename",
+                    "title": "文件名称"
+                }, {
+                    "name": "uploadpath",
+                    "title": "下载后地址"
+                }
+            ]
+        }, {
+            "name": "openCamera",
+            "title": "下载指定文件",
+            "replace": "openCamera(callback)",
+            "proc": "void openCamera(Function callback)",
+            "param": [{
+                    "name": "callback",
+                    "title": "打开摄像头后回调函数"
+                }
+            ]
+        }, {
+            "name": "showSysDialog",
+            "title": "弹出系统默认样式对话框",
+            "replace": "showSysDialog(title,message,successfn,errorfn)",
+            "proc": "void showSysDialog(String title,String message,String successfn,String errorfn)",
+            "param": [{
+                    "name": "title",
+                    "title": "系统提示框标题"
+                }, {
+                    "name": "message",
+                    "title": "提示框提示内容"
+                }, {
+                    "name": "successfn",
+                    "title": "确定后回调函数方法名称"
+                }, {
+                    "name": "errorfn",
+                    "title": "取消后回调函数方法名称"
+                }
+            ]
+        }, {
+            "name": "showSysDialog",
+            "title": "弹出加载等待框",
+            "replace": "showSysDialog(content,iswait)",
+            "proc": "void showSysDialog(String content,Boolean iswait)",
+            "param": [{
+                    "name": "content",
+                    "title": "提示内容"
+                }, {
+                    "name": "iswait",
+                    "title": "是否等待"
+                }
+            ]
+        }, {
+            "name": "closeSysDialog",
+            "title": "关闭加载等待框",
+            "replace": "closeSysDialog()",
+            "proc": "void closeSysDialog()"
+        }, {
+            "name": "close",
+            "title": "关闭指定页面,如果入参页面名称为空则关闭当前页面",
+            "replace": "close(pagename)",
+            "proc": "void close([Sting pagename])",
+            "param": [{
+                    "name": "pagename",
+                    "title": "要关闭页面名称"
+                }
+            ]
+        }, {
+            "name": "putFunctionQueue",
+            "title": "关闭指定页面后执行方法（建议在afterjs中调用）",
+            "replace": "putFunctionQueue(uiid,fnname)",
+            "proc": "void putFunctionQueue(String uiid,String fnname)",
+            "param": [{
+                    "name": "uiid",
+                    "title": "页面id"
+                }, {
+                    "name": "fnname",
+                    "title": "页面关闭后执行方法"
+                }
+            ]
+        }, {
+            "name": "reviseGridData",
+            "title": "重置表格数据",
+            "replace": "reviseGridData(gridName,data)",
+            "proc": "void reviseGridData(String gridName,Array data)",
+            "param": [{
+                    "name": "gridName",
+                    "title": "表格名称"
+                }, {
+                    "name": "data",
+                    "title": "表格数据"
+                }
+            ]
+        }, {
+            "name": "login",
+            "title": "登录方法",
+            "replace": "login(userid, psw)",
+            "proc": "Object login(String userid,String psw)",
+            "param": [{
+                    "name": "userid",
+                    "title": "用户名"
+                }, {
+                    "name": "psw",
+                    "title": "密码"
+                }
+            ],
+            "result": "返回登录后信息。如：'登录成功'"
+        }, {
+            "name": "login",
+            "title": "记录登录信息(调用其他登录接口后，将用户信息传入以便记录用户信息)",
+            "replace": "login(ret)",
+            "proc": "Object login(Object ret)",
+            "param": [{
+                    "name": "ret",
+                    "title": "登录成功后记录用户信息"
+                }
+            ],
+            "result": "返回登录后信息。如：'登录成功'"
+        }, {
+            "name": "getUser",
+            "title": "获取用户信息（用户编号，用户名称，session信息，角色）",
+            "replace": "getUser()",
+            "proc": "Object getUser()",
+            "result": "返回用户信息。如：{userId: 'admin',username: '超级管理员' ,sessionInfo: '123456',RoleGroup: ['超级管理员']}"
+        }, {
+            "name": "getMacInfo",
+            "title": "获取当前终端的MAC地址",
+            "replace": "getMacInfo()",
+            "proc": "String getMacInfo()",
+            "result": "返回当前终端的MAC地址"
+        }, {
+            "name": "changeServerConfig",
+            "title": "修改当前终端IP信息",
+            "replace": "changeServerConfig(ip, port)",
+            "proc": "void changeServerConfig(String ip,String port)",
+            "param": [{
+                    "name": "ip",
+                    "title": "访问地址ip"
+                }, {
+                    "name": "port",
+                    "title": "端口号"
+                }
+            ]
+        }, {
+            "name": "socket",
+            "title": "建立socket服务",
+            "replace": "socket(port)",
+            "proc": "void socket(String port)",
+            "param": [{
+                    "name": "port",
+                    "title": "端口号"
+                }
+            ]
+        }, {
+            "name": "isNull",
+            "title": "判断当前值是否为空",
+            "replace": "isNull()",
+            "proc": "Boolean isNull(Object val)",
+            "param": [{
+                    "name": "val",
+                    "title": "要判断的值"
+                }
+            ],
+            "result": "为空则返回true"
+        }, {
+            "name": "playSysSound",
+            "title": "播放系统音效",
+            "replace": "playSysSound(type)",
+            "proc": "void playSysSound(String type)",
+            "param": [{
+                    "name": "type",
+                    "title": "声音类型 scan：扫码报工音效  error：错误音效 push：推送音效 默认为error"
+                }
+            ]
+        }, {
+            "name": "writeToken",
+            "title": "设置请求的token值",
+            "replace": "writeToken(key,token)",
+            "proc": "void writeToken(String key,String token)",
+            "param": [{
+                    "name": "key",
+                    "title": "token入参key值"
+                }, {
+                    "name": "token",
+                    "title": "token值"
+                }
+            ]
+        }, {
+            "name": "md5",
+            "title": "降入参进行md5加密",
+            "replace": "md5(val)",
+            "proc": "String md5(String val)",
+            "param": [{
+                    "name": "val",
+                    "title": "要转换的值"
+                }
+            ],
+            "result": "返回对应md5加密后的值"
+        }
+    ],
+    "name": "global_control",
+    "title": "全局主函数,有入参时为获取相应控件。",
+    "proc": "Object global_control(String selecter,[String ui],[String formId])",
+    "param": [{
+            "name": "selecter",
+            "title": "指定控件名称/转储key值"
+        }, {
+            "name": "ui",
+            "title": "转储控件id"
+        }, {
+            "name": "formId",
+            "title": "指定页面编号"
+        }
+    ]
+}
+}

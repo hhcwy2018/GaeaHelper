@@ -1,0 +1,1 @@
+"C:\Users\wy\.jdks\jbr-17.0.7\bin\java" -jar verifier-all.jar -runtime-dir C:\Users\wy\.jdks\jbr-17.0.7 check-plugin X:\JAVA64\GaeaIdeaPlugin\build\distributions\GaeaIdeaPlugin-1.0.zip "C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.3"

@@ -1,0 +1,16 @@
+com.wh.GaeaIdeaPlugin:1.0
+\--- com.intellij:222.4345.14 [declaring module com.intellij.modules.platform]
+     +--- (failed) module intellij.profiler.asyncOne (optional): Plugins declaring module 'intellij.profiler.asyncOne' are not found in Marketplace https://plugins.jetbrains.com
+     +--- (failed) module intellij.profiler.asyncWindows (optional): Plugins declaring module 'intellij.profiler.asyncWindows' are not found in Marketplace https://plugins.jetbrains.com
+     +--- (failed) module intellij.profiler.common (optional): Plugins declaring module 'intellij.profiler.common' are not found in Marketplace https://plugins.jetbrains.com
+     +--- (failed) module intellij.profiler.ultimate.ideaAsyncProfiler (optional): Plugins declaring module 'intellij.profiler.ultimate.ideaAsyncProfiler' are not found in Marketplace https://plugins.jetbrains.com
+     +--- (optional) com.intellij.copyright:222.4345.14
+     |    \--- com.intellij:222.4345.14 (*) [declaring module com.intellij.modules.lang]
+     +--- (optional) com.intellij.java:222.4345.14
+     |    +--- com.intellij:222.4345.14 (*) [declaring module com.intellij.modules.platform]
+     |    +--- (optional) com.intellij.copyright:222.4345.14 (*)
+     |    +--- (optional) com.intellij.platform.images:222.4345.14
+     |    |    \--- com.intellij:222.4345.14 (*) [declaring module com.intellij.modules.lang]
+     |    \--- (optional) training:222.4345.14
+     |         \--- com.intellij:222.4345.14 (*) [declaring module com.intellij.modules.lang]
+     \--- (optional) com.intellij.platform.images:222.4345.14 (*)
